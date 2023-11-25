@@ -24,6 +24,16 @@ This document also assumes that
 * [the tarball](https://sourceforge.net/projects/schilytools/) is saved as ~/schily-2021-09-18.tar.bz2,
 * the local copy of this repository locates in ~/schilytools-msys2.
 
+## defs_h-schily-msys2.patch
+* ```SIG2STR_MAX``` in defs.h cause compile error.
+  ```c
+  #if __SIZEOF_INT__ >= 4
+#define SIG2STR_MAX (sizeof("RTMAX+") + sizeof("4294967295") - 1)
+#else
+#define SIG2STR_MAX (sizeof("RTMAX+") + sizeof("65535") - 1)
+#endif
+  ```
+* ```(sizeof("RTMAX+") + sizeof("4294967295") - 1)``` cause cpp error
 
 ## Installation
 
