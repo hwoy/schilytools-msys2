@@ -21,17 +21,18 @@ Please install the following packages in advance:
 This document also assumes that
 
 * you are working in the home directory ($HOME) in MSYS2,
-* [the tarball](https://sourceforge.net/projects/schilytools/) is saved as ~/schily-2020-11-25.tar.bz2,
+* [the tarball](https://sourceforge.net/projects/schilytools/) is saved as ~/schily-2021-09-18.tar.bz2,
 * the local copy of this repository locates in ~/schilytools-msys2.
 
 
 ## Installation
 
 ```console
-$ tar xvjf ~/schily-2020-11-25.tar.bz2
-$ cd ~/schily-2020-11-25
+$ tar xvjf ~/schily-2021-09-18.tar.bz2
+$ cd ~/schily-2021-09-18
 $ patch -p1 < ~/schilytools-msys2/schily-msys2.patch
-$ cd ~/schily-2020-11-25/psmake
+$ patch -p1 < ~/schilytools-msys2/defs_h-schily-msys2.patch
+$ cd ~/schily-2021-09-18/psmake
 $ ./MAKE-all
 $ cd ..
 $ psmake/smake
@@ -50,12 +51,4 @@ if you want the tools to be installed in /usr/local/schily instead.
 
 ## Notices
 
-This patch makes a file named os-msys_nt-10.0-19042.id in the RULES directory of [Schily-Tools](http://schilytools.sourceforge.net/) (~/schily-2020-11-25/RULES for example).
-The file name comes from
-```console
-$ uname
-MSYS_NT-10.0-19042
-```
-, this meaning that the operating system is Windows 10 build 19042 (aka 20H2).
-
-You would have to rename this file according to both your Windows 10 version and [MSYS2](https://www.msys2.org/) environment.
+This patch is no longer makes a file named os-msys_nt-10.0-19042.id in the RULES directory of [Schily-Tools](http://schilytools.sourceforge.net/) (~/schily-2021-09-18/RULES for example).
