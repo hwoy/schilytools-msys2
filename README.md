@@ -57,9 +57,9 @@ Please issue
 $ psmake/smake INS_BASE=/usr/local/schily install
 ```
 
-if you want the tools to be installed in /usr/local/schily instead.
+If you want the tools to be installed in /usr/local/schily instead.
 
 
 ## Notices
 
-This patch is no longer makes a file named os-msys_nt-10.0-19042.id in the RULES directory of [Schily-Tools](http://schilytools.sourceforge.net/) (~/schily-2021-09-18/RULES for example).
+This patch is no longer make a file named os-msys_nt-10.0-19042.id in the RULES directory of [Schily-Tools](http://schilytools.sourceforge.net/) (~/schily-2021-09-18/RULES for example).
