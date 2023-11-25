@@ -26,13 +26,13 @@ This document also assumes that
 
 ## defs_h-schily-msys2.patch
 * ```SIG2STR_MAX``` in defs.h cause compile error.
-  ```c
-  #if __SIZEOF_INT__ >= 4
+```c
+#if __SIZEOF_INT__ >= 4
 #define SIG2STR_MAX (sizeof("RTMAX+") + sizeof("4294967295") - 1)
 #else
 #define SIG2STR_MAX (sizeof("RTMAX+") + sizeof("65535") - 1)
 #endif
-  ```
+```
 * ```(sizeof("RTMAX+") + sizeof("4294967295") - 1)``` cause cpp error
 
 ## Installation
