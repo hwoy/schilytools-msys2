@@ -1,0 +1,18 @@
+diff --git a/sh/defs.h b/sh/defs.h
+index e092ef7..c7eec09 100644
+--- a/sh/defs.h
++++ b/sh/defs.h
+@@ -880,10 +880,10 @@ extern	int	str2sig		__PR((const char *s, int *sigp));
+ #ifndef	HAVE_SIG2STR
+ extern	int	sig2str		__PR((int sig, char *s));
+ #endif
+-#ifndef	SIG2STR_MAX		/* From Solaris signal.h */
+-#define	SIG2STR_MAX	32
++#ifdef	SIG2STR_MAX		/* From Solaris signal.h */
++#undef	SIG2STR_MAX
+ #endif
+-
++#define	SIG2STR_MAX	32
+ /*
+  * test.c
+  */
