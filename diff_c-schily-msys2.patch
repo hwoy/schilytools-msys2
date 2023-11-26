@@ -1,0 +1,13 @@
+diff --git a/sccs/sccs/cmd/src/diff.c b/sccs/sccs/cmd/src/diff.c
+index f530f0f..da8f68e 100644
+--- a/sccs/sccs/cmd/src/diff.c
++++ b/sccs/sccs/cmd/src/diff.c
+@@ -162,7 +162,7 @@
+ #define	VMS_VFORK_OK
+ #include <schily/vfork.h>
+ #include <schily/libport.h>
+-
++#include <schily/io.h>
+ #else	/* non-portable SunOS -only definitions BEGIN */
+ 
+ #define	SCCS_DIFF		0
