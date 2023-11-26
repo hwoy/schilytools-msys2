@@ -1,6 +1,6 @@
 # Schily-Tools-MSYS2
 
-This repository provides a patch to build [Schily-Tools](http://schilytools.sourceforge.net/) with [MSYS2](https://www.msys2.org/).
+This repository provides patches to build [Schily-Tools](http://schilytools.sourceforge.net/) with [MSYS2](https://www.msys2.org/).
 
 
 ## Introduction
