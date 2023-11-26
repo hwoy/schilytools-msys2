@@ -41,7 +41,7 @@ This document also assumes that
 ```console
 $ tar xvjf ~/schily-2021-09-18.tar.bz2
 $ cd ~/schily-2021-09-18
-$ patch -p1 < ~/schilytools-msys2/schily-msys2.patch
+$ patch -p1 < ~/schilytools-msys2/diff_c-schily-msys2.patch
 $ patch -p1 < ~/schilytools-msys2/defs_h-schily-msys2.patch
 $ cd ~/schily-2021-09-18/psmake
 $ ./MAKE-all
@@ -59,7 +59,10 @@ $ psmake/smake INS_BASE=/usr/local/schily install
 
 If you want the tools to be installed in /usr/local/schily instead.
 
+## RIP
+* jörg schilling
 
-## Notices
-
-This patch is no longer make a file named os-msys_nt-10.0-19042.id in the RULES directory of [Schily-Tools](http://schilytools.sourceforge.net/) (~/schily-2021-09-18/RULES for example).
+### Contact me
+- Web: https://github.com/hwoy 
+- Email: zaintcorp@yahoo.com 
+- Facebook: http://www.facebook.com/watt.duean
